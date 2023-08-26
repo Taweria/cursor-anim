@@ -1,0 +1,26 @@
+@keyframes wave1 {
+    0% {
+        background-color: red;
+    }
+    33%{
+        background-color: black;
+    }
+}
+
+@keyframes wave2{
+    33%{
+        background-color: red;
+    }
+    66%{
+        background-color: black;
+    }
+}
+
+@keyframes wave3{
+    66%{
+        background-color: red;
+    }
+    100%{
+        background-color: black;
+    }
+}
