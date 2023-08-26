@@ -1,0 +1,37 @@
+#cursor {
+    margin: 5vh auto 0;
+    position: relative;
+    height: 20px;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 100%;
+    opacity: 70%;
+    animation: wave1 2s infinite;
+
+    &::after, &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        aspect-ratio: 1/1;
+        background-color: black;
+        border-radius: 100%;
+    }
+
+    &::before {
+        height: 40px;
+        width: 40px;
+        opacity: 50%;
+        z-index: 2;
+        animation: wave2 2s infinite;
+    }
+    
+    &::after {
+        height: 60px;
+        width: 60px;
+        opacity: 30%;
+        z-index: 3;
+        animation: wave3 2s infinite;
+    }
+}
