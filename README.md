@@ -10,10 +10,10 @@
 
 **It's a circle cursor animated when you click on the page.**
 
-I did this project during my training at BeCode.org, to further my learning about github, html, css and js.
+I did this project during my training at BeCode.org, to further my learning about github, html, css/sass and js.
 
 # Used languages
 
 * HTML
-* CSS
+* CSS/SASS
 * Javascript
