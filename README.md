@@ -1,4 +1,4 @@
-# Contributors:
+# Contributors
 
 [Ali Elodie (Taweria )]( https://github.com/Taweria)
 
