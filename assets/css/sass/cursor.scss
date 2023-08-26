@@ -6,7 +6,19 @@
     background-color: black;
     border-radius: 100%;
     opacity: 70%;
-    animation: wave1 2s infinite;
+
+    &.click {
+        cursor: none;
+        animation: wave1 2s infinite;
+
+        &::after {
+            animation: wave2 2s infinite;
+        }
+
+        &::before {
+            animation: wave3 2s infinite;
+        }
+    }
 
     &::after, &::before {
         position: absolute;
@@ -24,7 +36,6 @@
         width: 40px;
         opacity: 50%;
         z-index: 2;
-        animation: wave2 2s infinite;
     }
     
     &::after {
@@ -32,6 +43,5 @@
         width: 60px;
         opacity: 30%;
         z-index: 3;
-        animation: wave3 2s infinite;
     }
 }
