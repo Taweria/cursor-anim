@@ -1,4 +1,5 @@
-let cursor = document.getElementById('cursor');
+let cursor = document.getElementById('cursor'),
+    cursorStyle = cursor.style;
 
 document.addEventListener('click', function(e) {
 
@@ -6,5 +7,16 @@ document.addEventListener('click', function(e) {
 
     setTimeout(function() {
         cursor.classList.remove('click');
-    }, 2000);
+    }, 1000);
+});
+
+document.addEventListener('mousemove', function(e) {
+    
+    let x = e.clientX,
+        y = e.clientY,
+        cursorWidth = cursor.offsetWidth,
+        cursorHeight = cursor.offsetHeight;
+
+    cursorStyle.left = x - (cursorWidth - 2) + 'px';
+    cursorStyle.top = y - (cursorHeight - 2) + 'px';
 });

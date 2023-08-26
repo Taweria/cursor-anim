@@ -3,7 +3,7 @@
     background-color: red;
   }
   33% {
-    background-color: black;
+    background-color: skyblue;
   }
 }
 @keyframes wave2 {
@@ -11,7 +11,7 @@
     background-color: red;
   }
   66% {
-    background-color: black;
+    background-color: skyblue;
   }
 }
 @keyframes wave3 {
@@ -19,6 +19,6 @@
     background-color: red;
   }
   100% {
-    background-color: black;
+    background-color: skyblue;
   }
 }/*# sourceMappingURL=animation.css.map */

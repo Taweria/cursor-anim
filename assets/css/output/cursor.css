@@ -1,21 +1,20 @@
 #cursor {
-  margin: 5vh auto 0;
   position: relative;
   height: 20px;
   aspect-ratio: 1/1;
-  background-color: black;
   border-radius: 100%;
-  opacity: 70%;
+  opacity: 0%;
 }
 #cursor.click {
   cursor: none;
-  animation: wave1 2s infinite;
+  animation: wave1 1s infinite;
+  opacity: 70%;
 }
 #cursor.click::after {
-  animation: wave2 2s infinite;
+  animation: wave2 1s infinite;
 }
 #cursor.click::before {
-  animation: wave3 2s infinite;
+  animation: wave3 1s infinite;
 }
 #cursor::after, #cursor::before {
   position: absolute;
@@ -24,7 +23,6 @@
   transform: translate(-50%, -50%);
   content: "";
   aspect-ratio: 1/1;
-  background-color: black;
   border-radius: 100%;
 }
 #cursor::before {
